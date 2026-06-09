@@ -1,18 +1,26 @@
 #!/usr/bin/env python3
 """
-End-to-end test for the MWS → LULC pipeline.
+End-to-end test for the MWS + LULC pipeline.
 
-Runs three GEE computation tasks for a fixed test block (Tamil Nadu /
+Runs two GEE computation tasks for a fixed test block (Tamil Nadu /
 Chennai / Guindy) and verifies the results are published to GeoServer.
 
 Usage:
     python computing/misc/lulc_pipeline_test.py
 
-Prerequisites (must pass first):
+Prerequisites (must all pass first):
     python computing/misc/internal_api_initialisation_test.py --require-gee
 
+    Admin boundary for the test block must already exist in GEE. Run once:
+        python manage.py shell -c "
+        from computing.misc.admin_boundary import generate_tehsil_shape_file_data
+        generate_tehsil_shape_file_data.delay(
+            state='tamil nadu', district='chennai', block='guindy', gee_account_id=1
+        ).get()
+        "
+
 Visualise results:
-    GeoServer Layer Preview → OpenLayers
+    GeoServer Layer Preview: OpenLayers
     http://localhost:8080/geoserver/web/
     Workspaces: mws, LULC_level_1, LULC_level_2, LULC_level_3
 """
@@ -48,22 +56,8 @@ def ensure_dirs():
     os.makedirs(os.path.join("data", "admin-boundary", "output", STATE.replace(" ", "_")), exist_ok=True)
 
 
-def run_admin_boundary():
-    print("\n[1/3] Running admin boundary (clips census data, uploads to GEE)...")
-    from computing.misc.admin_boundary import generate_tehsil_shape_file_data
-    result = generate_tehsil_shape_file_data.delay(
-        state=STATE, district=DISTRICT, block=BLOCK, gee_account_id=GEE_ACCOUNT_ID
-    )
-    ok = result.get()
-    if ok:
-        print(f"[PASS] Admin boundary: {DISTRICT}/{BLOCK} published to GeoServer workspace 'panchayat_boundaries'.")
-    else:
-        print("[FAIL] Admin boundary: task returned False.")
-    return ok
-
-
 def run_mws():
-    print("\n[2/3] Running MWS layer (clips pan-India watersheds to block)...")
+    print("\n[1/2] Running MWS layer (clips pan-India watersheds to block)...")
     from computing.mws.mws import mws_layer
     result = mws_layer.delay(
         state=STATE, district=DISTRICT, block=BLOCK, gee_account_id=GEE_ACCOUNT_ID
@@ -77,7 +71,7 @@ def run_mws():
 
 
 def run_lulc():
-    print(f"\n[3/3] Running LULC v3 ({START_YEAR}-{END_YEAR}): submits GEE image exports, may take 5-15 min...")
+    print(f"\n[2/2] Running LULC v3 ({START_YEAR}-{END_YEAR}): submits GEE image exports, may take 5-15 min...")
     from computing.lulc.lulc_v3 import clip_lulc_v3
     result = clip_lulc_v3.delay(
         state=STATE,
@@ -104,11 +98,6 @@ def main():
 
     ensure_dirs()
 
-    ab_ok = run_admin_boundary()
-    if not ab_ok:
-        print("\nAborted: admin boundary must succeed before MWS can run.")
-        sys.exit(1)
-
     mws_ok = run_mws()
     if not mws_ok:
         print("\nAborted: MWS must succeed before LULC can run.")
@@ -117,7 +106,7 @@ def main():
     lulc_ok = run_lulc()
 
     print("\n" + "=" * 60)
-    if ab_ok and mws_ok and lulc_ok:
+    if mws_ok and lulc_ok:
         print("LULC pipeline test passed.")
         sys.exit(0)
     else:
