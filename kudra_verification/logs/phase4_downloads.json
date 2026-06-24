@@ -1,0 +1,320 @@
+{
+  "lulc": {
+    "2018": {
+      "asset_id": "projects/arcane-mason-493503-a6/assets/apps/mws/bihar/kaimur/kudra/kaimur_kudra_2018-07-01_2019-06-30_LULCmap_10m",
+      "local_path": "/home/uttkarsh/core-stack-backend/kudra_verification/lulc_downloads/kaimur_kudra_2018-07-01_2019-06-30_LULCmap_10m.tif",
+      "gcs_prefix": "kudra_lulc_download/kaimur_kudra_2018-07-01_2019-06-30_LULCmap_10m",
+      "export_task_id": "5GVMP7LNIMR2JYMOFTIAUTT5",
+      "status": "downloaded",
+      "export_status": "SUCCEEDED",
+      "validation": {
+        "path": "/home/uttkarsh/core-stack-backend/kudra_verification/lulc_downloads/kaimur_kudra_2018-07-01_2019-06-30_LULCmap_10m.tif",
+        "exists": true,
+        "driver": "GTiff",
+        "crs": "GEOGCS[\"WGS 84\",DATUM[\"World Geodetic System 1984\",SPHEROID[\"WGS 84\",6378137,298.257223563]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AXIS[\"Latitude\",NORTH],AXIS[\"Longitude\",EAST]]",
+        "width": 2437,
+        "height": 4230,
+        "count": 1,
+        "dtype": "float64",
+        "transform": [
+          8.983152841195215e-05,
+          0.0,
+          83.34668020742174,
+          0.0,
+          -8.983152841195215e-05,
+          25.171782407841523
+        ],
+        "nodata": null,
+        "shape": [
+          4230,
+          2437
+        ],
+        "min": 1,
+        "max": 12,
+        "unique_values": [
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          6.0,
+          7.0,
+          8.0,
+          9.0,
+          10.0,
+          11.0,
+          12.0,
+          NaN
+        ],
+        "pixel_count": 10308510,
+        "is_empty": false,
+        "valid": true
+      }
+    },
+    "2019": {
+      "asset_id": "projects/arcane-mason-493503-a6/assets/apps/mws/bihar/kaimur/kudra/kaimur_kudra_2019-07-01_2020-06-30_LULCmap_10m",
+      "local_path": "/home/uttkarsh/core-stack-backend/kudra_verification/lulc_downloads/kaimur_kudra_2019-07-01_2020-06-30_LULCmap_10m.tif",
+      "gcs_prefix": "kudra_lulc_download/kaimur_kudra_2019-07-01_2020-06-30_LULCmap_10m",
+      "export_task_id": "MC2EPIM5A2Y5FJXUBXTAGAKB",
+      "status": "downloaded",
+      "export_status": "SUCCEEDED",
+      "validation": {
+        "path": "/home/uttkarsh/core-stack-backend/kudra_verification/lulc_downloads/kaimur_kudra_2019-07-01_2020-06-30_LULCmap_10m.tif",
+        "exists": true,
+        "driver": "GTiff",
+        "crs": "GEOGCS[\"WGS 84\",DATUM[\"World Geodetic System 1984\",SPHEROID[\"WGS 84\",6378137,298.257223563]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AXIS[\"Latitude\",NORTH],AXIS[\"Longitude\",EAST]]",
+        "width": 2437,
+        "height": 4230,
+        "count": 1,
+        "dtype": "float64",
+        "transform": [
+          8.983152841195215e-05,
+          0.0,
+          83.34668020742174,
+          0.0,
+          -8.983152841195215e-05,
+          25.171782407841523
+        ],
+        "nodata": null,
+        "shape": [
+          4230,
+          2437
+        ],
+        "min": 1,
+        "max": 12,
+        "unique_values": [
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          6.0,
+          7.0,
+          8.0,
+          9.0,
+          10.0,
+          11.0,
+          12.0,
+          NaN
+        ],
+        "pixel_count": 10308510,
+        "is_empty": false,
+        "valid": true
+      }
+    },
+    "2020": {
+      "asset_id": "projects/arcane-mason-493503-a6/assets/apps/mws/bihar/kaimur/kudra/kaimur_kudra_2020-07-01_2021-06-30_LULCmap_10m",
+      "local_path": "/home/uttkarsh/core-stack-backend/kudra_verification/lulc_downloads/kaimur_kudra_2020-07-01_2021-06-30_LULCmap_10m.tif",
+      "gcs_prefix": "kudra_lulc_download/kaimur_kudra_2020-07-01_2021-06-30_LULCmap_10m",
+      "export_task_id": "CGU3ASIUSOIOOWONFTRNXQKU",
+      "status": "downloaded",
+      "export_status": "SUCCEEDED",
+      "validation": {
+        "path": "/home/uttkarsh/core-stack-backend/kudra_verification/lulc_downloads/kaimur_kudra_2020-07-01_2021-06-30_LULCmap_10m.tif",
+        "exists": true,
+        "driver": "GTiff",
+        "crs": "GEOGCS[\"WGS 84\",DATUM[\"World Geodetic System 1984\",SPHEROID[\"WGS 84\",6378137,298.257223563]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AXIS[\"Latitude\",NORTH],AXIS[\"Longitude\",EAST]]",
+        "width": 2437,
+        "height": 4230,
+        "count": 1,
+        "dtype": "float64",
+        "transform": [
+          8.983152841195215e-05,
+          0.0,
+          83.34668020742174,
+          0.0,
+          -8.983152841195215e-05,
+          25.171782407841523
+        ],
+        "nodata": null,
+        "shape": [
+          4230,
+          2437
+        ],
+        "min": 1,
+        "max": 12,
+        "unique_values": [
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          6.0,
+          7.0,
+          8.0,
+          9.0,
+          10.0,
+          11.0,
+          12.0,
+          NaN
+        ],
+        "pixel_count": 10308510,
+        "is_empty": false,
+        "valid": true
+      }
+    },
+    "2021": {
+      "asset_id": "projects/arcane-mason-493503-a6/assets/apps/mws/bihar/kaimur/kudra/kaimur_kudra_2021-07-01_2022-06-30_LULCmap_10m",
+      "local_path": "/home/uttkarsh/core-stack-backend/kudra_verification/lulc_downloads/kaimur_kudra_2021-07-01_2022-06-30_LULCmap_10m.tif",
+      "gcs_prefix": "kudra_lulc_download/kaimur_kudra_2021-07-01_2022-06-30_LULCmap_10m",
+      "export_task_id": "2ZFEIBJODXWZ2M6BDLGGLRZD",
+      "status": "downloaded",
+      "export_status": "SUCCEEDED",
+      "validation": {
+        "path": "/home/uttkarsh/core-stack-backend/kudra_verification/lulc_downloads/kaimur_kudra_2021-07-01_2022-06-30_LULCmap_10m.tif",
+        "exists": true,
+        "driver": "GTiff",
+        "crs": "GEOGCS[\"WGS 84\",DATUM[\"World Geodetic System 1984\",SPHEROID[\"WGS 84\",6378137,298.257223563]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AXIS[\"Latitude\",NORTH],AXIS[\"Longitude\",EAST]]",
+        "width": 2437,
+        "height": 4230,
+        "count": 1,
+        "dtype": "float64",
+        "transform": [
+          8.983152841195215e-05,
+          0.0,
+          83.34668020742174,
+          0.0,
+          -8.983152841195215e-05,
+          25.171782407841523
+        ],
+        "nodata": null,
+        "shape": [
+          4230,
+          2437
+        ],
+        "min": 1,
+        "max": 12,
+        "unique_values": [
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          6.0,
+          7.0,
+          8.0,
+          9.0,
+          10.0,
+          11.0,
+          12.0,
+          NaN
+        ],
+        "pixel_count": 10308510,
+        "is_empty": false,
+        "valid": true
+      }
+    },
+    "2022": {
+      "asset_id": "projects/arcane-mason-493503-a6/assets/apps/mws/bihar/kaimur/kudra/kaimur_kudra_2022-07-01_2023-06-30_LULCmap_10m",
+      "local_path": "/home/uttkarsh/core-stack-backend/kudra_verification/lulc_downloads/kaimur_kudra_2022-07-01_2023-06-30_LULCmap_10m.tif",
+      "gcs_prefix": "kudra_lulc_download/kaimur_kudra_2022-07-01_2023-06-30_LULCmap_10m",
+      "export_task_id": "Z6YYLKXDLNV3QS6P7DVVTD4C",
+      "status": "downloaded",
+      "export_status": "SUCCEEDED",
+      "validation": {
+        "path": "/home/uttkarsh/core-stack-backend/kudra_verification/lulc_downloads/kaimur_kudra_2022-07-01_2023-06-30_LULCmap_10m.tif",
+        "exists": true,
+        "driver": "GTiff",
+        "crs": "GEOGCS[\"WGS 84\",DATUM[\"World Geodetic System 1984\",SPHEROID[\"WGS 84\",6378137,298.257223563]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AXIS[\"Latitude\",NORTH],AXIS[\"Longitude\",EAST]]",
+        "width": 2437,
+        "height": 4230,
+        "count": 1,
+        "dtype": "float64",
+        "transform": [
+          8.983152841195215e-05,
+          0.0,
+          83.34668020742174,
+          0.0,
+          -8.983152841195215e-05,
+          25.171782407841523
+        ],
+        "nodata": null,
+        "shape": [
+          4230,
+          2437
+        ],
+        "min": 1,
+        "max": 12,
+        "unique_values": [
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          6.0,
+          7.0,
+          8.0,
+          9.0,
+          10.0,
+          11.0,
+          12.0,
+          NaN
+        ],
+        "pixel_count": 10308510,
+        "is_empty": false,
+        "valid": true
+      }
+    },
+    "2023": {
+      "asset_id": "projects/arcane-mason-493503-a6/assets/apps/mws/bihar/kaimur/kudra/kaimur_kudra_2023-07-01_2024-06-30_LULCmap_10m",
+      "local_path": "/home/uttkarsh/core-stack-backend/kudra_verification/lulc_downloads/kaimur_kudra_2023-07-01_2024-06-30_LULCmap_10m.tif",
+      "gcs_prefix": "kudra_lulc_download/kaimur_kudra_2023-07-01_2024-06-30_LULCmap_10m",
+      "export_task_id": "Y4ZJFSLMIDZWVACSFVIKPI5S",
+      "status": "downloaded",
+      "export_status": "SUCCEEDED",
+      "validation": {
+        "path": "/home/uttkarsh/core-stack-backend/kudra_verification/lulc_downloads/kaimur_kudra_2023-07-01_2024-06-30_LULCmap_10m.tif",
+        "exists": true,
+        "driver": "GTiff",
+        "crs": "GEOGCS[\"WGS 84\",DATUM[\"World Geodetic System 1984\",SPHEROID[\"WGS 84\",6378137,298.257223563]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AXIS[\"Latitude\",NORTH],AXIS[\"Longitude\",EAST]]",
+        "width": 2437,
+        "height": 4230,
+        "count": 1,
+        "dtype": "float64",
+        "transform": [
+          8.983152841195215e-05,
+          0.0,
+          83.34668020742174,
+          0.0,
+          -8.983152841195215e-05,
+          25.171782407841523
+        ],
+        "nodata": null,
+        "shape": [
+          4230,
+          2437
+        ],
+        "min": 1,
+        "max": 12,
+        "unique_values": [
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          6.0,
+          7.0,
+          8.0,
+          9.0,
+          10.0,
+          11.0,
+          12.0,
+          NaN
+        ],
+        "pixel_count": 10308510,
+        "is_empty": false,
+        "valid": true
+      }
+    }
+  },
+  "mws": {
+    "asset_id": "projects/arcane-mason-493503-a6/assets/apps/mws/bihar/kaimur/kudra/filtered_mws_kaimur_kudra_uid",
+    "local_path": "/home/uttkarsh/core-stack-backend/kudra_verification/lulc_downloads/filtered_mws_kaimur_kudra_uid.geojson",
+    "feature_count": 60,
+    "status": "downloaded",
+    "columns": [
+      "area_in_ha",
+      "bacode",
+      "id",
+      "sbcode",
+      "uid",
+      "wsconc",
+      "geometry"
+    ],
+    "crs": "EPSG:4326"
+  }
+}

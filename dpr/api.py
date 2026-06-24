@@ -4,6 +4,7 @@ from datetime import date, datetime
 
 from django.http import HttpResponse, HttpResponseBadRequest
 from django.shortcuts import render
+from django.conf import settings
 from django.urls import reverse
 from drf_yasg import openapi
 from drf_yasg.utils import swagger_auto_schema
@@ -367,6 +368,8 @@ def generate_mws_report(request):
             "factory_desc": factory_desc,
             "mining_desc": mining_desc,
             "green_credit_desc": green_credits,
+            "geoserver_url": (settings.GEOSERVER_URL or "").rstrip("/"),
+            "base_url": request.build_absolute_uri("/")[:-1],
         }
 
         # print("Api Processing End 1", datetime.now())
@@ -395,6 +398,8 @@ def generate_resource_report(request):
             "block": transform_name(result["block"]),
             "plan_id": result["plan_id"],
             "plan_name": result["plan_name"],
+            "geoserver_url": (settings.GEOSERVER_URL or "").rstrip("/"),
+            "base_url": request.build_absolute_uri("/")[:-1],
         }
 
         return render(request, "resource-report.html", context)
@@ -424,15 +429,16 @@ def download_report(request):
     if missing:
         return HttpResponseBadRequest(f"Missing query params: {', '.join(missing)}")
 
+    base_url = request.build_absolute_uri("/")[:-1]
     if report_type == "mws":
         report_html_url = (
-            f"https://geoserver.core-stack.org/api/v1/generate_mws_report/"
+            f"{base_url}/api/v1/generate_mws_report/"
             f"?state={request.GET.get('state')}&district={request.GET.get('district')}&block={request.GET.get('block')}&uid={request.GET.get('uid')}"
         )
         filename = f"mws_report_{request.GET.get('uid')}.pdf"
     elif report_type == "resource":
         report_html_url = (
-            f"https://geoserver.core-stack.org/api/v1/generate_resource_report/"
+            f"{base_url}/api/v1/generate_resource_report/"
             f"?district={request.GET.get('district')}&block={request.GET.get('block')}&plan_id={request.GET.get('plan_id')}&plan_name={request.GET.get('plan_name')}"
         )
         filename = f"resource_report_{request.GET.get('plan_name')}.pdf"
@@ -551,6 +557,8 @@ def generate_tehsil_report(request):
             "fishery_timeline_json": json.dumps(fishery_timeline),
             "agroforestry_transition_json": json.dumps(agroforestry_transition),
             "agroforestry_sankey_json": json.dumps(agroforestry_sankey),
+            "geoserver_url": (settings.GEOSERVER_URL or "").rstrip("/"),
+            "base_url": request.build_absolute_uri("/")[:-1],
         }
 
         return render(request, "block-report.html", context)

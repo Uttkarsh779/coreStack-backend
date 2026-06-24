@@ -1,0 +1,77 @@
+{
+  "asset_base": "projects/arcane-mason-493503-a6/assets/apps/mws/bihar/kaimur/kudra/",
+  "mws_asset": {
+    "asset_id": "projects/arcane-mason-493503-a6/assets/apps/mws/bihar/kaimur/kudra/filtered_mws_kaimur_kudra_uid",
+    "exists": false
+  },
+  "lulc_assets": {
+    "2018": {
+      "asset_id": "projects/arcane-mason-493503-a6/assets/apps/mws/bihar/kaimur/kudra/kaimur_kudra_2018-07-01_2019-06-30_LULCmap_10m",
+      "exists": false
+    },
+    "2019": {
+      "asset_id": "projects/arcane-mason-493503-a6/assets/apps/mws/bihar/kaimur/kudra/kaimur_kudra_2019-07-01_2020-06-30_LULCmap_10m",
+      "exists": false
+    },
+    "2020": {
+      "asset_id": "projects/arcane-mason-493503-a6/assets/apps/mws/bihar/kaimur/kudra/kaimur_kudra_2020-07-01_2021-06-30_LULCmap_10m",
+      "exists": false
+    },
+    "2021": {
+      "asset_id": "projects/arcane-mason-493503-a6/assets/apps/mws/bihar/kaimur/kudra/kaimur_kudra_2021-07-01_2022-06-30_LULCmap_10m",
+      "exists": false
+    },
+    "2022": {
+      "asset_id": "projects/arcane-mason-493503-a6/assets/apps/mws/bihar/kaimur/kudra/kaimur_kudra_2022-07-01_2023-06-30_LULCmap_10m",
+      "exists": false
+    },
+    "2023": {
+      "asset_id": "projects/arcane-mason-493503-a6/assets/apps/mws/bihar/kaimur/kudra/kaimur_kudra_2023-07-01_2024-06-30_LULCmap_10m",
+      "exists": false
+    }
+  },
+  "change_detection_assets": {
+    "change_kaimur_kudra_Urbanization_2018_2023": {
+      "asset_id": "projects/arcane-mason-493503-a6/assets/apps/mws/bihar/kaimur/kudra/change_kaimur_kudra_Urbanization_2018_2023",
+      "exists": false
+    },
+    "change_kaimur_kudra_Degradation_2018_2023": {
+      "asset_id": "projects/arcane-mason-493503-a6/assets/apps/mws/bihar/kaimur/kudra/change_kaimur_kudra_Degradation_2018_2023",
+      "exists": false
+    },
+    "change_kaimur_kudra_Deforestation_2018_2023": {
+      "asset_id": "projects/arcane-mason-493503-a6/assets/apps/mws/bihar/kaimur/kudra/change_kaimur_kudra_Deforestation_2018_2023",
+      "exists": false
+    },
+    "change_kaimur_kudra_Afforestation_2018_2023": {
+      "asset_id": "projects/arcane-mason-493503-a6/assets/apps/mws/bihar/kaimur/kudra/change_kaimur_kudra_Afforestation_2018_2023",
+      "exists": false
+    },
+    "change_kaimur_kudra_CropIntensity_2018_2023": {
+      "asset_id": "projects/arcane-mason-493503-a6/assets/apps/mws/bihar/kaimur/kudra/change_kaimur_kudra_CropIntensity_2018_2023",
+      "exists": false
+    }
+  },
+  "change_vector_assets": {
+    "change_vector_kaimur_kudra_Urbanization_2018_2023": {
+      "asset_id": "projects/arcane-mason-493503-a6/assets/apps/mws/bihar/kaimur/kudra/change_vector_kaimur_kudra_Urbanization_2018_2023",
+      "exists": false
+    },
+    "change_vector_kaimur_kudra_Degradation_2018_2023": {
+      "asset_id": "projects/arcane-mason-493503-a6/assets/apps/mws/bihar/kaimur/kudra/change_vector_kaimur_kudra_Degradation_2018_2023",
+      "exists": false
+    },
+    "change_vector_kaimur_kudra_Deforestation_2018_2023": {
+      "asset_id": "projects/arcane-mason-493503-a6/assets/apps/mws/bihar/kaimur/kudra/change_vector_kaimur_kudra_Deforestation_2018_2023",
+      "exists": false
+    },
+    "change_vector_kaimur_kudra_Afforestation_2018_2023": {
+      "asset_id": "projects/arcane-mason-493503-a6/assets/apps/mws/bihar/kaimur/kudra/change_vector_kaimur_kudra_Afforestation_2018_2023",
+      "exists": false
+    },
+    "change_vector_kaimur_kudra_CropIntensity_2018_2023": {
+      "asset_id": "projects/arcane-mason-493503-a6/assets/apps/mws/bihar/kaimur/kudra/change_vector_kaimur_kudra_CropIntensity_2018_2023",
+      "exists": false
+    }
+  }
+}

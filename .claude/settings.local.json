@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(wsl -d Ubuntu -- bash -c \"grep -r 'GEE_STORAGE_PROJECT' /home/uttkarsh/core-stack-backend/nrm_app/settings.py | head -20\")",
+      "PowerShell(wsl -d Ubuntu -- bash -c \"cat /home/uttkarsh/core-stack-backend/nrm_app/.env | grep -E 'GEE_STORAGE_PROJECT|GEE_DEFAULT|GEE_HELPER_ACCOUNT'\")",
+      "PowerShell(wsl -d Ubuntu -- bash -c \"conda run -n corestack-backend python3 -c 'import ee; print\\(ee.__version__\\)' 2>&1; conda run -n corestack-backend python3 -c 'import rasterio; print\\(rasterio.__version__\\)' 2>&1\")",
+      "PowerShell(wsl -d Ubuntu -- bash -c \"conda run -n corestackenv python3 -c 'import ee; print\\(ee.__version__\\)' 2>&1; conda run -n corestackenv python3 -c 'import rasterio; print\\(rasterio.__version__\\)' 2>&1\")",
+      "PowerShell(wsl -d Ubuntu -- bash -c \"source /home/uttkarsh/miniconda3/etc/profile.d/conda.sh && conda activate corestack-backend && python3 -c 'import ee; print\\(ee.__version__\\)' 2>&1\")",
+      "PowerShell(wsl -d Ubuntu -- bash -c \"source /home/uttkarsh/miniconda3/etc/profile.d/conda.sh && conda activate corestack-backend && python3 -c 'import rasterio; print\\(rasterio.__version__\\)' 2>&1; python3 -c 'import geopandas; print\\(geopandas.__version__\\)' 2>&1; python3 -c 'import numpy; print\\(numpy.__version__\\)' 2>&1; python3 -c 'import shapely; print\\(shapely.__version__\\)' 2>&1\")",
+      "PowerShell(wsl -d Ubuntu -- bash -c \"source /home/uttkarsh/miniconda3/etc/profile.d/conda.sh && conda activate corestack-backend && cd /home/uttkarsh/core-stack-backend && python3 kudra_verification/phase1b_deep_audit.py 2>&1\")",
+      "PowerShell(wsl -d Ubuntu -- bash -c \"source /home/uttkarsh/miniconda3/etc/profile.d/conda.sh && conda activate corestack-backend && cd /home/uttkarsh/core-stack-backend && python3 kudra_verification/phase1c_boundary_mws_check.py 2>&1\")",
+      "PowerShell(wsl -d Ubuntu -- bash -c \"eval \\\\$\\(opam env --switch=geocaml\\) && cd /home/uttkarsh/core-stack-backend/village_lulc_analytics_ocaml && dune build 2>&1 && echo 'BUILD_SUCCESS' && ls -la _build/default/bin/main.exe\")",
+      "PowerShell(wsl -d Ubuntu -- bash -c 'eval $\\(/usr/bin/opam env --switch=geocaml\\) && cd /home/uttkarsh/core-stack-backend/village_lulc_analytics_ocaml && dune build 2>&1 && echo BUILD_SUCCESS && ls -la _build/default/bin/main.exe')",
+      "PowerShell(wsl -d Ubuntu -- bash -c 'export PATH=\"/home/uttkarsh/.opam/geocaml/bin:$PATH\" && cd /home/uttkarsh/core-stack-backend/village_lulc_analytics_ocaml && dune build 2>&1 && echo BUILD_SUCCESS && ls -la _build/default/bin/main.exe')"
+    ]
+  }
+}

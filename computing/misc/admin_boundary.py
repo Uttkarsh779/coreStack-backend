@@ -67,12 +67,15 @@ def generate_tehsil_shape_file_data(self, state, district, block, gee_account_id
             dataset_name="Admin Boundary",
         )
 
-    res = push_shape_to_geoserver(shp_path, workspace="panchayat_boundaries")
     layer_at_geoserver = False
-    if res["status_code"] == 201 and layer_id:
-        update_layer_sync_status(layer_id=layer_id, sync_to_geoserver=True)
-        print("sync to geoserver flag updated")
-        layer_at_geoserver = True
+    try:
+        res = push_shape_to_geoserver(shp_path, workspace="panchayat_boundaries")
+        if res and res.get("status_code") == 201 and layer_id:
+            update_layer_sync_status(layer_id=layer_id, sync_to_geoserver=True)
+            print("sync to geoserver flag updated")
+            layer_at_geoserver = True
+    except Exception as e:
+        print(f"Warning: Failed to sync admin boundary to local GeoServer: {e}")
     return layer_at_geoserver
 
 

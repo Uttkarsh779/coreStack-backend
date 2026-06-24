@@ -1,0 +1,7 @@
+(library
+ (name village_lulc_analytics_lib)
+ (libraries
+  geojson
+  ezjsonm
+  tiff
+  tiff.unix))

@@ -1,0 +1,9 @@
+{
+  "python-envs.defaultEnvManager": "ms-python.python:conda",
+  "python-envs.defaultPackageManager": "ms-python.python:conda",
+  "python.defaultInterpreterPath": "/home/uttkarsh/miniconda3/envs/corestack-backend/bin/python",
+  "pylint.interpreter": ["/home/uttkarsh/miniconda3/envs/corestack-backend/bin/python"],
+  "python.analysis.extraPaths": [
+    "/home/uttkarsh/miniconda3/envs/corestack-backend/lib/python3.10/site-packages"
+  ]
+}

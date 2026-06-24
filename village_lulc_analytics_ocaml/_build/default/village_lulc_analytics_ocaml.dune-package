@@ -1,0 +1,10 @@
+(lang dune 3.23)
+(name village_lulc_analytics_ocaml)
+(sections
+ (lib .)
+ (bin ../../bin)
+ (doc ../../doc/village_lulc_analytics_ocaml))
+(files
+ (lib (META dune-package opam))
+ (bin (village_lulc_analytics_cli))
+ (doc (README.md)))

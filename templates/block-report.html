@@ -1762,9 +1762,9 @@
         };
 
         // Fetch GeoJSON and render all maps
-        const geoJsonUrl = "https://geoserver.core-stack.org:8443/geoserver/mws_layers/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=mws_layers:deltaG_well_depth_{{district}}_{{block}}&outputFormat=application/json";
+        const geoJsonUrl = "{{ geoserver_url }}/mws_layers/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=mws_layers:deltaG_well_depth_{{district}}_{{block}}&outputFormat=application/json";
 
-        const villageJsonUrl = "https://geoserver.core-stack.org:8443/geoserver/panchayat_boundaries/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=	panchayat_boundaries:{{district}}_{{block}}&outputFormat=application/json"
+        const villageJsonUrl = "{{ geoserver_url }}/panchayat_boundaries/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=	panchayat_boundaries:{{district}}_{{block}}&outputFormat=application/json"
 
         // Function to create style based on pattern data
         function createStyleFunction(patternData, colorScheme = "default") {
@@ -2930,7 +2930,7 @@
             const currentState = "{{ state }}";
             const currentDistrict = "{{ district }}";
             const currentBlock = "{{ block }}";
-            const MWSReportUrl = `https://geoserver.core-stack.org/api/v1/generate_mws_report/?state=${currentState}&district=${currentDistrict}&block=${currentBlock}&uid=${uid}`;
+            const MWSReportUrl = `{{ base_url }}/api/v1/generate_mws_report/?state=${currentState}&district=${currentDistrict}&block=${currentBlock}&uid=${uid}`;
 
             let intensityColor = intensity === 0 ? '#27ae60' : '#c0392b';
             let intensityText = intensity === 0 ? 'No Stress Pattern' : `(${intensity}) Stress Patterns`;
@@ -2999,7 +2999,7 @@
             const currentState = "{{ state }}";
             const currentDistrict = "{{ district }}";
             const currentBlock = "{{ block }}";
-            const MWSReportUrl = `https://geoserver.core-stack.org/api/v1/generate_mws_report/?state=${currentState}&district=${currentDistrict}&block=${currentBlock}&uid=${uid}`;
+            const MWSReportUrl = `{{ base_url }}/api/v1/generate_mws_report/?state=${currentState}&district=${currentDistrict}&block=${currentBlock}&uid=${uid}`;
             return `
         <div style="display: flex; justify-content: space-between; align-items: center;
                     border-bottom: 1px solid #eee; padding-bottom: 8px; margin-bottom: 8px;">
@@ -3035,7 +3035,7 @@
             const currentState = "{{ state }}";
             const currentDistrict = "{{ district }}";
             const currentBlock = "{{ block }}";
-            const MWSReportUrl = `https://geoserver.core-stack.org/api/v1/generate_mws_report/?state=${currentState}&district=${currentDistrict}&block=${currentBlock}&uid=${uid}`;
+            const MWSReportUrl = `{{ base_url }}/api/v1/generate_mws_report/?state=${currentState}&district=${currentDistrict}&block=${currentBlock}&uid=${uid}`;
             let intensityColor = intensity === 0 ? '#27ae60' : '#c0392b';
             let intensityText = intensity === 0 ? 'No Stress Pattern' : `(${intensity}) Stress Patterns`;
 

@@ -1,0 +1,260 @@
+{
+  "2018": {
+    "asset_id": "projects/arcane-mason-493503-a6/assets/apps/mws/bihar/kaimur/kudra/kaimur_kudra_2018-07-01_2019-06-30_LULCmap_10m",
+    "year": 2018,
+    "exists": true,
+    "readable": true,
+    "bands": [
+      "predicted_label"
+    ],
+    "band_count": 1,
+    "crs": "EPSG:4326",
+    "x_res_m": 8.983152841195215e-05,
+    "pixel_count": 5076173,
+    "class_histogram": {
+      "1": 69254,
+      "10": 1621042,
+      "11": 463,
+      "12": 608159,
+      "2": 1742,
+      "3": 8237,
+      "4": 8230,
+      "6": 1957037,
+      "7": 4786,
+      "8": 761881,
+      "9": 18300
+    },
+    "observed_classes": [
+      1,
+      2,
+      3,
+      4,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "unexpected_classes": [],
+    "has_expected_classes": true,
+    "is_empty": false,
+    "valid": true
+  },
+  "2019": {
+    "asset_id": "projects/arcane-mason-493503-a6/assets/apps/mws/bihar/kaimur/kudra/kaimur_kudra_2019-07-01_2020-06-30_LULCmap_10m",
+    "year": 2019,
+    "exists": true,
+    "readable": true,
+    "bands": [
+      "predicted_label"
+    ],
+    "band_count": 1,
+    "crs": "EPSG:4326",
+    "x_res_m": 8.983152841195215e-05,
+    "pixel_count": 5076173,
+    "class_histogram": {
+      "1": 82349,
+      "10": 1986766,
+      "11": 236201,
+      "12": 390019,
+      "2": 81,
+      "3": 7129,
+      "4": 39479,
+      "6": 2042680,
+      "7": 2084,
+      "8": 264643,
+      "9": 7699
+    },
+    "observed_classes": [
+      1,
+      2,
+      3,
+      4,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "unexpected_classes": [],
+    "has_expected_classes": true,
+    "is_empty": false,
+    "valid": true
+  },
+  "2020": {
+    "asset_id": "projects/arcane-mason-493503-a6/assets/apps/mws/bihar/kaimur/kudra/kaimur_kudra_2020-07-01_2021-06-30_LULCmap_10m",
+    "year": 2020,
+    "exists": true,
+    "readable": true,
+    "bands": [
+      "predicted_label"
+    ],
+    "band_count": 1,
+    "crs": "EPSG:4326",
+    "x_res_m": 8.983152841195215e-05,
+    "pixel_count": 5076173,
+    "class_histogram": {
+      "1": 97809,
+      "10": 1746860,
+      "11": 39664,
+      "12": 500587,
+      "2": 701,
+      "3": 3820,
+      "4": 7615,
+      "6": 1946990,
+      "7": 30409,
+      "8": 682723,
+      "9": 1953
+    },
+    "observed_classes": [
+      1,
+      2,
+      3,
+      4,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "unexpected_classes": [],
+    "has_expected_classes": true,
+    "is_empty": false,
+    "valid": true
+  },
+  "2021": {
+    "asset_id": "projects/arcane-mason-493503-a6/assets/apps/mws/bihar/kaimur/kudra/kaimur_kudra_2021-07-01_2022-06-30_LULCmap_10m",
+    "year": 2021,
+    "exists": true,
+    "readable": true,
+    "bands": [
+      "predicted_label"
+    ],
+    "band_count": 1,
+    "crs": "EPSG:4326",
+    "x_res_m": 8.983152841195215e-05,
+    "pixel_count": 5076173,
+    "class_histogram": {
+      "1": 78359,
+      "10": 1747133,
+      "11": 6891,
+      "12": 523915,
+      "2": 371,
+      "3": 18547,
+      "4": 24353,
+      "6": 1812229,
+      "7": 2240,
+      "8": 841773,
+      "9": 3318
+    },
+    "observed_classes": [
+      1,
+      2,
+      3,
+      4,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "unexpected_classes": [],
+    "has_expected_classes": true,
+    "is_empty": false,
+    "valid": true
+  },
+  "2022": {
+    "asset_id": "projects/arcane-mason-493503-a6/assets/apps/mws/bihar/kaimur/kudra/kaimur_kudra_2022-07-01_2023-06-30_LULCmap_10m",
+    "year": 2022,
+    "exists": true,
+    "readable": true,
+    "bands": [
+      "predicted_label"
+    ],
+    "band_count": 1,
+    "crs": "EPSG:4326",
+    "x_res_m": 8.983152841195215e-05,
+    "pixel_count": 5076173,
+    "class_histogram": {
+      "1": 91029,
+      "10": 2001018,
+      "11": 23232,
+      "12": 566120,
+      "2": 381,
+      "3": 11064,
+      "4": 7699,
+      "6": 1793984,
+      "7": 8437,
+      "8": 536130,
+      "9": 20034
+    },
+    "observed_classes": [
+      1,
+      2,
+      3,
+      4,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "unexpected_classes": [],
+    "has_expected_classes": true,
+    "is_empty": false,
+    "valid": true
+  },
+  "2023": {
+    "asset_id": "projects/arcane-mason-493503-a6/assets/apps/mws/bihar/kaimur/kudra/kaimur_kudra_2023-07-01_2024-06-30_LULCmap_10m",
+    "year": 2023,
+    "exists": true,
+    "readable": true,
+    "bands": [
+      "predicted_label"
+    ],
+    "band_count": 1,
+    "crs": "EPSG:4326",
+    "x_res_m": 8.983152841195215e-05,
+    "pixel_count": 5076173,
+    "class_histogram": {
+      "1": 109145,
+      "10": 1893036,
+      "11": 165175,
+      "12": 622328,
+      "2": 171,
+      "3": 11185,
+      "4": 11254,
+      "6": 1845177,
+      "7": 3169,
+      "8": 277272,
+      "9": 121216
+    },
+    "observed_classes": [
+      1,
+      2,
+      3,
+      4,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "unexpected_classes": [],
+    "has_expected_classes": true,
+    "is_empty": false,
+    "valid": true
+  }
+}

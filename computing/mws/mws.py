@@ -74,17 +74,19 @@ def mws_layer(self, state, district, block, gee_account_id):
             dataset_name="MWS",
             algorithm_version="1.2",
         )
-        fc = ee.FeatureCollection(asset_id)
-        res = sync_fc_to_geoserver(
-            fc,
-            state,
-            layer_name,
-            "mws",
-        )
-
-        if res and layer_id:
-            update_layer_sync_status(layer_id=layer_id, sync_to_geoserver=True)
-            print("sync to geoserver flag is updated")
+        try:
+            fc = ee.FeatureCollection(asset_id)
+            res = sync_fc_to_geoserver(
+                fc,
+                state,
+                layer_name,
+                "mws",
+            )
+            if res and layer_id:
+                update_layer_sync_status(layer_id=layer_id, sync_to_geoserver=True)
+                print("sync to geoserver flag is updated")
+        except Exception as e:
+            print(f"Warning: Failed to sync MWS boundary to local GeoServer: {e}")
         layer_generated = True
     return layer_generated
 

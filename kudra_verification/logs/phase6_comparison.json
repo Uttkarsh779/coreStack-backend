@@ -1,0 +1,243 @@
+{
+  "raster_comparisons": {
+    "Urbanization": {
+      "param": "Urbanization",
+      "py_path": "/home/uttkarsh/core-stack-backend/kudra_verification/python_output/change_Urbanization.tif",
+      "ocaml_path": "/home/uttkarsh/core-stack-backend/kudra_verification/ocaml_output/change_Urbanization.tif",
+      "shape": [
+        4230,
+        2437
+      ],
+      "total_valid_pixels": 10308510,
+      "matching_pixels": 10308346,
+      "mismatching_pixels": 164,
+      "mismatch_pct": 0.0016,
+      "perfect_match": false,
+      "top_discrepancies": {
+        "py=4\u2192ocaml=3": 74,
+        "py=3\u2192ocaml=0": 31,
+        "py=3\u2192ocaml=2": 19,
+        "py=1\u2192ocaml=2": 16,
+        "py=1\u2192ocaml=3": 10,
+        "py=4\u2192ocaml=0": 7,
+        "py=1\u2192ocaml=0": 4,
+        "py=4\u2192ocaml=2": 3
+      },
+      "py_class_dist": {
+        "0": 10221344,
+        "1": 67903,
+        "2": 128,
+        "3": 19018,
+        "4": 117
+      },
+      "ocaml_class_dist": {
+        "0": 10221386,
+        "1": 67873,
+        "2": 166,
+        "3": 19052,
+        "4": 33
+      },
+      "diff_path": "/home/uttkarsh/core-stack-backend/kudra_verification/diff_output/diff_Urbanization.tif"
+    },
+    "Degradation": {
+      "param": "Degradation",
+      "py_path": "/home/uttkarsh/core-stack-backend/kudra_verification/python_output/change_Degradation.tif",
+      "ocaml_path": "/home/uttkarsh/core-stack-backend/kudra_verification/ocaml_output/change_Degradation.tif",
+      "shape": [
+        4230,
+        2437
+      ],
+      "total_valid_pixels": 10308510,
+      "matching_pixels": 10288445,
+      "mismatching_pixels": 20065,
+      "mismatch_pct": 0.1946,
+      "perfect_match": false,
+      "top_discrepancies": {
+        "py=1\u2192ocaml=0": 14187,
+        "py=1\u2192ocaml=4": 2502,
+        "py=0\u2192ocaml=1": 1433,
+        "py=4\u2192ocaml=0": 849,
+        "py=0\u2192ocaml=4": 472,
+        "py=0\u2192ocaml=2": 364,
+        "py=2\u2192ocaml=1": 114,
+        "py=3\u2192ocaml=0": 54,
+        "py=2\u2192ocaml=0": 29,
+        "py=0\u2192ocaml=3": 20
+      },
+      "py_class_dist": {
+        "0": 7918388,
+        "1": 2279983,
+        "2": 9233,
+        "3": 440,
+        "4": 100466
+      },
+      "ocaml_class_dist": {
+        "0": 7931218,
+        "1": 2264858,
+        "2": 9434,
+        "3": 385,
+        "4": 102615
+      },
+      "diff_path": "/home/uttkarsh/core-stack-backend/kudra_verification/diff_output/diff_Degradation.tif"
+    },
+    "Deforestation": {
+      "param": "Deforestation",
+      "py_path": "/home/uttkarsh/core-stack-backend/kudra_verification/python_output/change_Deforestation.tif",
+      "ocaml_path": "/home/uttkarsh/core-stack-backend/kudra_verification/ocaml_output/change_Deforestation.tif",
+      "shape": [
+        4230,
+        2437
+      ],
+      "total_valid_pixels": 10308510,
+      "matching_pixels": 10284775,
+      "mismatching_pixels": 23735,
+      "mismatch_pct": 0.2302,
+      "perfect_match": false,
+      "top_discrepancies": {
+        "py=5\u2192ocaml=0": 6502,
+        "py=1\u2192ocaml=5": 5937,
+        "py=3\u2192ocaml=5": 3825,
+        "py=3\u2192ocaml=0": 2587,
+        "py=1\u2192ocaml=0": 1603,
+        "py=0\u2192ocaml=3": 1350,
+        "py=0\u2192ocaml=2": 731,
+        "py=0\u2192ocaml=1": 717,
+        "py=3\u2192ocaml=1": 420,
+        "py=2\u2192ocaml=1": 26
+      },
+      "py_class_dist": {
+        "0": 8300536,
+        "1": 1713228,
+        "2": 9888,
+        "3": 220397,
+        "4": 330,
+        "5": 64131
+      },
+      "ocaml_class_dist": {
+        "0": 8308427,
+        "1": 1706856,
+        "2": 10591,
+        "3": 214911,
+        "4": 331,
+        "5": 67394
+      },
+      "diff_path": "/home/uttkarsh/core-stack-backend/kudra_verification/diff_output/diff_Deforestation.tif"
+    },
+    "Afforestation": {
+      "param": "Afforestation",
+      "py_path": "/home/uttkarsh/core-stack-backend/kudra_verification/python_output/change_Afforestation.tif",
+      "ocaml_path": "/home/uttkarsh/core-stack-backend/kudra_verification/ocaml_output/change_Afforestation.tif",
+      "shape": [
+        4230,
+        2437
+      ],
+      "total_valid_pixels": 10308510,
+      "matching_pixels": 10295220,
+      "mismatching_pixels": 13290,
+      "mismatch_pct": 0.1289,
+      "perfect_match": false,
+      "top_discrepancies": {
+        "py=1\u2192ocaml=0": 6114,
+        "py=5\u2192ocaml=0": 1771,
+        "py=1\u2192ocaml=5": 1426,
+        "py=0\u2192ocaml=3": 1265,
+        "py=3\u2192ocaml=5": 638,
+        "py=3\u2192ocaml=0": 540,
+        "py=0\u2192ocaml=1": 531,
+        "py=3\u2192ocaml=1": 528,
+        "py=0\u2192ocaml=2": 306,
+        "py=2\u2192ocaml=1": 92
+      },
+      "py_class_dist": {
+        "0": 8503754,
+        "1": 1713228,
+        "2": 6398,
+        "3": 59893,
+        "4": 331,
+        "5": 24906
+      },
+      "ocaml_class_dist": {
+        "0": 8510062,
+        "1": 1706856,
+        "2": 6607,
+        "3": 59458,
+        "4": 292,
+        "5": 25235
+      },
+      "diff_path": "/home/uttkarsh/core-stack-backend/kudra_verification/diff_output/diff_Afforestation.tif"
+    },
+    "CropIntensity": {
+      "param": "CropIntensity",
+      "py_path": "/home/uttkarsh/core-stack-backend/kudra_verification/python_output/change_CropIntensity.tif",
+      "ocaml_path": "/home/uttkarsh/core-stack-backend/kudra_verification/ocaml_output/change_CropIntensity.tif",
+      "shape": [
+        4230,
+        2437
+      ],
+      "total_valid_pixels": 10308510,
+      "matching_pixels": 10181278,
+      "mismatching_pixels": 127232,
+      "mismatch_pct": 1.2342,
+      "perfect_match": false,
+      "top_discrepancies": {
+        "py=0\u2192ocaml=1": 34464,
+        "py=4\u2192ocaml=8": 30621,
+        "py=0\u2192ocaml=8": 23689,
+        "py=1\u2192ocaml=8": 8937,
+        "py=7\u2192ocaml=4": 8592,
+        "py=7\u2192ocaml=1": 5889,
+        "py=7\u2192ocaml=0": 5494,
+        "py=4\u2192ocaml=0": 2633,
+        "py=8\u2192ocaml=0": 2263,
+        "py=7\u2192ocaml=8": 1105
+      },
+      "py_class_dist": {
+        "0": 8088329,
+        "1": 70882,
+        "2": 153,
+        "3": 16459,
+        "4": 156576,
+        "5": 439,
+        "6": 8868,
+        "7": 267481,
+        "8": 1697401,
+        "9": 1922
+      },
+      "ocaml_class_dist": {
+        "0": 8040396,
+        "1": 101336,
+        "2": 137,
+        "3": 17226,
+        "4": 132313,
+        "5": 103,
+        "6": 9043,
+        "7": 246352,
+        "8": 1759686,
+        "9": 1918
+      },
+      "diff_path": "/home/uttkarsh/core-stack-backend/kudra_verification/diff_output/diff_CropIntensity.tif"
+    }
+  },
+  "vector_comparisons": {
+    "Urbanization": {
+      "param": "Urbanization",
+      "error": "ocaml vector missing: /home/uttkarsh/core-stack-backend/kudra_verification/ocaml_output/change_vector_Urbanization.geojson"
+    },
+    "Degradation": {
+      "param": "Degradation",
+      "error": "ocaml vector missing: /home/uttkarsh/core-stack-backend/kudra_verification/ocaml_output/change_vector_Degradation.geojson"
+    },
+    "Deforestation": {
+      "param": "Deforestation",
+      "error": "ocaml vector missing: /home/uttkarsh/core-stack-backend/kudra_verification/ocaml_output/change_vector_Deforestation.geojson"
+    },
+    "Afforestation": {
+      "param": "Afforestation",
+      "error": "ocaml vector missing: /home/uttkarsh/core-stack-backend/kudra_verification/ocaml_output/change_vector_Afforestation.geojson"
+    },
+    "CropIntensity": {
+      "param": "CropIntensity",
+      "error": "ocaml vector missing: /home/uttkarsh/core-stack-backend/kudra_verification/ocaml_output/change_vector_CropIntensity.geojson"
+    }
+  }
+}

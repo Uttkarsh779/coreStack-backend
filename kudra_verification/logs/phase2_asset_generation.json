@@ -1,0 +1,59 @@
+{
+  "asset_base": "projects/arcane-mason-493503-a6/assets/apps/mws/bihar/kaimur/kudra/",
+  "admin_boundary": {
+    "asset_id": "projects/arcane-mason-493503-a6/assets/apps/mws/bihar/kaimur/kudra/admin_boundary_kaimur_kudra",
+    "task_id": "DKKRZPZCE5CRUQHYDKKAQSAK",
+    "status": "SUCCEEDED",
+    "features": 178
+  },
+  "filtered_mws": {
+    "asset_id": "projects/arcane-mason-493503-a6/assets/apps/mws/bihar/kaimur/kudra/filtered_mws_kaimur_kudra_uid",
+    "task_id": "KOUCU4ZJOIHZCFQWACWEABJQ",
+    "status": "SUCCEEDED",
+    "mws_count": 60
+  },
+  "lulc_assets": {
+    "2018": {
+      "asset_id": "projects/arcane-mason-493503-a6/assets/apps/mws/bihar/kaimur/kudra/kaimur_kudra_2018-07-01_2019-06-30_LULCmap_10m",
+      "pan_india_source": "projects/corestack-datasets/assets/datasets/LULC_v3_river_basin/pan_india_lulc_v3_2018_2019",
+      "task_id": "4BTWUWDP3J6P2SUE5BRZP4DO",
+      "status": "submitted",
+      "final_status": "SUCCEEDED"
+    },
+    "2019": {
+      "asset_id": "projects/arcane-mason-493503-a6/assets/apps/mws/bihar/kaimur/kudra/kaimur_kudra_2019-07-01_2020-06-30_LULCmap_10m",
+      "pan_india_source": "projects/corestack-datasets/assets/datasets/LULC_v3_river_basin/pan_india_lulc_v3_2019_2020",
+      "task_id": "XYT4EKO6ITH75VFH5CMWQZKF",
+      "status": "submitted",
+      "final_status": "SUCCEEDED"
+    },
+    "2020": {
+      "asset_id": "projects/arcane-mason-493503-a6/assets/apps/mws/bihar/kaimur/kudra/kaimur_kudra_2020-07-01_2021-06-30_LULCmap_10m",
+      "pan_india_source": "projects/corestack-datasets/assets/datasets/LULC_v3_river_basin/pan_india_lulc_v3_2020_2021",
+      "task_id": "7M5L4N3SJ5KH3XD4ZNJDVNDA",
+      "status": "submitted",
+      "final_status": "SUCCEEDED"
+    },
+    "2021": {
+      "asset_id": "projects/arcane-mason-493503-a6/assets/apps/mws/bihar/kaimur/kudra/kaimur_kudra_2021-07-01_2022-06-30_LULCmap_10m",
+      "pan_india_source": "projects/corestack-datasets/assets/datasets/LULC_v3_river_basin/pan_india_lulc_v3_2021_2022",
+      "task_id": "M6RSM6NKDSJOZBCMPRKIKBJT",
+      "status": "submitted",
+      "final_status": "SUCCEEDED"
+    },
+    "2022": {
+      "asset_id": "projects/arcane-mason-493503-a6/assets/apps/mws/bihar/kaimur/kudra/kaimur_kudra_2022-07-01_2023-06-30_LULCmap_10m",
+      "pan_india_source": "projects/corestack-datasets/assets/datasets/LULC_v3_river_basin/pan_india_lulc_v3_2022_2023",
+      "task_id": "VTMTBPHCECPCGAJWI2TVZYE5",
+      "status": "submitted",
+      "final_status": "SUCCEEDED"
+    },
+    "2023": {
+      "asset_id": "projects/arcane-mason-493503-a6/assets/apps/mws/bihar/kaimur/kudra/kaimur_kudra_2023-07-01_2024-06-30_LULCmap_10m",
+      "pan_india_source": "projects/corestack-datasets/assets/datasets/LULC_v3_river_basin/pan_india_lulc_v3_2023_2024",
+      "task_id": "AZPEL5WDPTGXQ6I3WM5HWYEW",
+      "status": "submitted",
+      "final_status": "SUCCEEDED"
+    }
+  }
+}

@@ -263,11 +263,14 @@ def sync_lulc_to_geoserver(
             else:
                 layer_name = f"LULC_{s_year}_{e_year}_{asset_suffix}_{suff}"
 
-            res = sync_raster_gcs_to_geoserver(
-                workspace, gcs_file_name, layer_name, style
-            )
-            if res and layer_ids:
-                update_layer_sync_status(layer_id=layer_ids[i], sync_to_geoserver=True)
-                print("geoserver flag is updated")
-                layer_at_geoserver = True
+            try:
+                res = sync_raster_gcs_to_geoserver(
+                    workspace, gcs_file_name, layer_name, style
+                )
+                if res and layer_ids:
+                    update_layer_sync_status(layer_id=layer_ids[i], sync_to_geoserver=True)
+                    print("geoserver flag is updated")
+                    layer_at_geoserver = True
+            except Exception as e:
+                print(f"Warning: Failed to sync LULC raster to local GeoServer: {e}")
     return layer_at_geoserver

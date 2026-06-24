@@ -2031,7 +2031,7 @@
             const maxLat = extent[3];
     
             // Create WFS URL with BBOX filter (simpler, more compatible)
-            const baseUrl = 'https://geoserver.core-stack.org:8443/geoserver/panchayat_boundaries/ows';
+            const baseUrl = '{{ geoserver_url }}/panchayat_boundaries/ows';
             
             // BBOX filter syntax: BBOX(geometry_column, minx, miny, maxx, maxy)
             const bboxFilter = `BBOX(the_geom,${minLon},${minLat},${maxLon},${maxLat})`;
@@ -2102,7 +2102,7 @@
     
     const wmsLayer = new ol.layer.Image({
         source: new ol.source.ImageWMS({
-            url: 'https://geoserver.core-stack.org:8443/geoserver/wms',
+            url: '{{ geoserver_url }}/wms',
             params: {
                 'LAYERS': "terrain:{{district}}_{{block}}_terrain_raster",
                 'STYLES': 'Terrain_Style_11_Classes'
@@ -2116,7 +2116,7 @@
     
     const degradRaster = new ol.layer.Image({
         source: new ol.source.ImageWMS({
-            url: 'https://geoserver.core-stack.org:8443/geoserver/wms',
+            url: '{{ geoserver_url }}/wms',
             params: {
                 'LAYERS': "change_detection:change_{{district}}_{{block}}_Degradation",
                 'STYLES': "degradation"
@@ -2130,7 +2130,7 @@
     
     const lulcRaster = new ol.layer.Image({
         source: new ol.source.ImageWMS({
-            url: 'https://geoserver.core-stack.org:8443/geoserver/wms',
+            url: '{{ geoserver_url }}/wms',
             params: {
                 'LAYERS': "LULC_level_3:LULC_22_23_{{district}}_{{block}}_level_3",
                 'STYLES': "lulc_level_3_style"
@@ -2144,7 +2144,7 @@
     
     const waterRaster = new ol.layer.Image({
         source: new ol.source.ImageWMS({
-            url: 'https://geoserver.core-stack.org:8443/geoserver/wms',
+            url: '{{ geoserver_url }}/wms',
             params: {
                 'LAYERS': "LULC_level_3:LULC_22_23_{{district}}_{{block}}_level_3",
                 'STYLES': "lulc_water_pixels"
@@ -2158,7 +2158,7 @@
     
     const urbanRaster = new ol.layer.Image({
         source: new ol.source.ImageWMS({
-            url: 'https://geoserver.core-stack.org:8443/geoserver/wms',
+            url: '{{ geoserver_url }}/wms',
             params: {
                 'LAYERS': "change_detection:change_{{district}}_{{block}}_Urbanization",
                 'STYLES': "urbanization"
@@ -2172,7 +2172,7 @@
     
     const treeReduceRaster = new ol.layer.Image({
         source: new ol.source.ImageWMS({
-            url: 'https://geoserver.core-stack.org:8443/geoserver/wms',
+            url: '{{ geoserver_url }}/wms',
             params: {
                 'LAYERS': "change_detection:change_{{district}}_{{block}}_Deforestation",
                 'STYLES': "deforestation"
@@ -2446,7 +2446,7 @@
     // FETCH MWS BOUNDARIES AND ADD TO MAIN MAP
     // ============================================================================
     
-    fetch("https://geoserver.core-stack.org:8443/geoserver/mws_layers/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=mws_layers:deltaG_well_depth_{{district}}_{{block}}&outputFormat=application/json")
+    fetch("{{ geoserver_url }}/mws_layers/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=mws_layers:deltaG_well_depth_{{district}}_{{block}}&outputFormat=application/json")
         .then(response => response.json())
         .then(data => {
             const vectorSource = new ol.source.Vector({
@@ -2494,7 +2494,7 @@
     // ============================================================================
     
     const fetchFeatureByUid = async (uid, wmsLayer1, degradRaster1, lulcRaster1, treeReduceRaster1, urbanRaster1, waterRaster1) => {
-        await fetch("https://geoserver.core-stack.org:8443/geoserver/mws_layers/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=mws_layers:deltaG_well_depth_{{district}}_{{block}}&outputFormat=application/json")
+        await fetch("{{ geoserver_url }}/mws_layers/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=mws_layers:deltaG_well_depth_{{district}}_{{block}}&outputFormat=application/json")
             .then(response => response.json())
             .then(data => {
                 const features = new ol.format.GeoJSON().readFeatures(data);
@@ -2601,7 +2601,7 @@
     // FETCH SURFACE WATERBODIES
     // ============================================================================
     
-    fetch("https://geoserver.core-stack.org:8443/geoserver/swb/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=swb:surface_waterbodies_{{district}}_{{block}}&outputFormat=application/json")
+    fetch("{{ geoserver_url }}/swb/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=swb:surface_waterbodies_{{district}}_{{block}}&outputFormat=application/json")
         .then(response => response.json())
         .then(data => {
             const vectorSource = new ol.source.Vector({
@@ -2632,7 +2632,7 @@
     // FETCH GROUNDWATER EXTRACTION STATUS
     // ============================================================================
     
-    fetch("https://geoserver.core-stack.org:8443/geoserver/soge/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=soge:soge_vector_{{district}}_{{block}}&outputFormat=application/json")
+    fetch("{{ geoserver_url }}/soge/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=soge:soge_vector_{{district}}_{{block}}&outputFormat=application/json")
         .then(response => response.json())
         .then(data => {
             const vectorSource = new ol.source.Vector({

@@ -1,0 +1,11 @@
+lib: [
+  "_build/install/default/lib/village_lulc_analytics_ocaml/META"
+  "_build/install/default/lib/village_lulc_analytics_ocaml/dune-package"
+  "_build/install/default/lib/village_lulc_analytics_ocaml/opam"
+]
+bin: [
+  "_build/install/default/bin/village_lulc_analytics_cli"
+]
+doc: [
+  "_build/install/default/doc/village_lulc_analytics_ocaml/README.md"
+]

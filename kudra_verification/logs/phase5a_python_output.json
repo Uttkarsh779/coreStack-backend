@@ -1,0 +1,155 @@
+{
+  "rasters": {
+    "Urbanization": {
+      "path": "/home/uttkarsh/core-stack-backend/kudra_verification/python_output/change_Urbanization.tif",
+      "unique_codes": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "shape": [
+        4230,
+        2437
+      ]
+    },
+    "Degradation": {
+      "path": "/home/uttkarsh/core-stack-backend/kudra_verification/python_output/change_Degradation.tif",
+      "unique_codes": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "shape": [
+        4230,
+        2437
+      ]
+    },
+    "Deforestation": {
+      "path": "/home/uttkarsh/core-stack-backend/kudra_verification/python_output/change_Deforestation.tif",
+      "unique_codes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "shape": [
+        4230,
+        2437
+      ]
+    },
+    "Afforestation": {
+      "path": "/home/uttkarsh/core-stack-backend/kudra_verification/python_output/change_Afforestation.tif",
+      "unique_codes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "shape": [
+        4230,
+        2437
+      ]
+    },
+    "CropIntensity": {
+      "path": "/home/uttkarsh/core-stack-backend/kudra_verification/python_output/change_CropIntensity.tif",
+      "unique_codes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "shape": [
+        4230,
+        2437
+      ]
+    }
+  },
+  "vectors": {
+    "Urbanization": {
+      "path": "/home/uttkarsh/core-stack-backend/kudra_verification/python_output/change_vector_Urbanization.geojson",
+      "watershed_count": 60,
+      "columns": [
+        "uid",
+        "geometry",
+        "bu_bu",
+        "w_bu",
+        "tr_bu",
+        "b_bu",
+        "total_urb"
+      ]
+    },
+    "Degradation": {
+      "path": "/home/uttkarsh/core-stack-backend/kudra_verification/python_output/change_vector_Degradation.geojson",
+      "watershed_count": 60,
+      "columns": [
+        "uid",
+        "geometry",
+        "f_f",
+        "f_bu",
+        "f_ba",
+        "f_sc",
+        "total_deg"
+      ]
+    },
+    "Deforestation": {
+      "path": "/home/uttkarsh/core-stack-backend/kudra_verification/python_output/change_vector_Deforestation.geojson",
+      "watershed_count": 60,
+      "columns": [
+        "uid",
+        "geometry",
+        "fo_fo",
+        "fo_bu",
+        "fo_fa",
+        "fo_ba",
+        "fo_sc",
+        "total_def"
+      ]
+    },
+    "Afforestation": {
+      "path": "/home/uttkarsh/core-stack-backend/kudra_verification/python_output/change_vector_Afforestation.geojson",
+      "watershed_count": 60,
+      "columns": [
+        "uid",
+        "geometry",
+        "fo_fo",
+        "bu_fo",
+        "fa_fo",
+        "ba_fo",
+        "sc_fo",
+        "total_aff"
+      ]
+    },
+    "CropIntensity": {
+      "path": "/home/uttkarsh/core-stack-backend/kudra_verification/python_output/change_vector_CropIntensity.geojson",
+      "watershed_count": 60,
+      "columns": [
+        "uid",
+        "geometry",
+        "do_si",
+        "tr_si",
+        "tr_do",
+        "si_do",
+        "si_tr",
+        "do_tr",
+        "si_si",
+        "do_do",
+        "tr_tr",
+        "total_change"
+      ]
+    }
+  }
+}

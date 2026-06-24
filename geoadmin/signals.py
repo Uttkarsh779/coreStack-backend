@@ -20,6 +20,9 @@ def generate_activated_locations_json_data():
         response_data = activated_tehsils()
         transformed_data = transform_data(data=response_data)
 
+        # Ensure directory exists
+        activate_locations_file_path.parent.mkdir(parents=True, exist_ok=True)
+
         # Write to JSON file
         with open(activate_locations_file_path, "w") as f:
             json.dump(transformed_data, f, indent=2)

@@ -497,7 +497,7 @@
                 }),
                 new ol.layer.Image({
                     source: new ol.source.ImageWMS({
-                        url: 'https://geoserver.core-stack.org:8443/geoserver/wms',
+                        url: '{{ geoserver_url }}/wms',
                         params: {
                             'LAYERS': "LULC_level_3:LULC_23_24_{{district}}_{{block}}_level_3",
                         },
@@ -553,7 +553,7 @@
                 }),
                 new ol.layer.Image({
                     source: new ol.source.ImageWMS({
-                        url: 'https://geoserver.core-stack.org:8443/geoserver/wms',
+                        url: '{{ geoserver_url }}/wms',
                         params: {
                             'LAYERS': "stream_order:stream_order_{{district}}_{{block}}_raster",
                             'STYLES': "stream_order"
@@ -623,7 +623,7 @@
                 }),
                 new ol.layer.Image({
                     source: new ol.source.ImageWMS({
-                        url: 'https://geoserver.core-stack.org:8443/geoserver/wms',
+                        url: '{{ geoserver_url }}/wms',
                         params: {
                             'LAYERS': "terrain:{{district}}_{{block}}_terrain_raster",
                             'STYLES': "Terrain_Style_11_Classes"
@@ -654,7 +654,7 @@
         }
 
         async function addMwsLayer() {
-            const url = "https://geoserver.core-stack.org:8443/geoserver/mws_layers/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=mws_layers:deltaG_well_depth_{{district}}_{{block}}&outputFormat=application/json";
+            const url = "{{ geoserver_url }}/mws_layers/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=mws_layers:deltaG_well_depth_{{district}}_{{block}}&outputFormat=application/json";
             const resp = await fetch(url);
             const data = await resp.json();
 
@@ -699,7 +699,7 @@
         }
 
         async function addVillageBoundary() {
-            const url = "https://geoserver.core-stack.org:8443/geoserver/panchayat_boundaries/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=panchayat_boundaries:{{district}}_{{block}}&outputFormat=application/json";
+            const url = "{{ geoserver_url }}/panchayat_boundaries/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=panchayat_boundaries:{{district}}_{{block}}&outputFormat=application/json";
             const resp = await fetch(url);
             const data = await resp.json();
 
@@ -725,7 +725,7 @@
                 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(svgMarkup);
 
             const url =
-                "https://geoserver.core-stack.org:8443/geoserver/resources/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=resources:settlement_{{plan_id}}_{{district}}_{{block}}&outputFormat=application/json";
+                "{{ geoserver_url }}/resources/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=resources:settlement_{{plan_id}}_{{district}}_{{block}}&outputFormat=application/json";
             
             try {
                 const resp = await fetch(url);
@@ -782,7 +782,7 @@
                 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(maintainMarkup);
 
             const url =
-                "https://geoserver.core-stack.org:8443/geoserver/resources/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=resources:well_{{plan_id}}_{{district}}_{{block}}&outputFormat=application/json";
+                "{{ geoserver_url }}/resources/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=resources:well_{{plan_id}}_{{district}}_{{block}}&outputFormat=application/json";
             
             try {
                 const resp = await fetch(url);
@@ -869,7 +869,7 @@
                 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(maintainMarkup);
 
             const url =
-                "https://geoserver.core-stack.org:8443/geoserver/resources/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=resources:waterbody_{{plan_id}}_{{district}}_{{block}}&outputFormat=application/json";
+                "{{ geoserver_url }}/resources/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=resources:waterbody_{{plan_id}}_{{district}}_{{block}}&outputFormat=application/json";
             
             try {
                 const resp = await fetch(url);
@@ -942,13 +942,13 @@
             const RechargeIconsUrl = 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(svgMarkupRecharge);
 
             const urlIrrigation =
-                "https://geoserver.core-stack.org:8443/geoserver/works/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=works:plan_agri_{{plan_id}}_{{district}}_{{block}}&outputFormat=application/json";
+                "{{ geoserver_url }}/works/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=works:plan_agri_{{plan_id}}_{{district}}_{{block}}&outputFormat=application/json";
 
             const urlRecharge =
-                "https://geoserver.core-stack.org:8443/geoserver/works/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=works:plan_gw_{{plan_id}}_{{district}}_{{block}}&outputFormat=application/json";
+                "{{ geoserver_url }}/works/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=works:plan_gw_{{plan_id}}_{{district}}_{{block}}&outputFormat=application/json";
 
 
-            const urlDrainage = "https://geoserver.core-stack.org:8443/geoserver/drainage/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=drainage:{{district}}_{{block}}&outputFormat=application/json";
+            const urlDrainage = "{{ geoserver_url }}/drainage/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=drainage:{{district}}_{{block}}&outputFormat=application/json";
 
             const resp = await fetch(urlDrainage);
             const data = await resp.json();

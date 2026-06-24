@@ -1,0 +1,28 @@
+(lang dune 3.0)
+
+(name village_lulc_analytics_ocaml)
+
+(generate_opam_files true)
+
+(source (github your-org/village_lulc_analytics_ocaml))
+
+(authors "CoRE Stack Team")
+
+(maintainers "CoRE Stack Team")
+
+(package
+ (name village_lulc_analytics_ocaml)
+ (synopsis "Village-level LULC analytics using GeoCAML")
+ (description "A standalone OCaml tool that reads GeoJSON boundaries and LULC GeoTIFFs to compute area statistics.")
+ (depends
+  (ocaml (>= 5.0))
+  geojson
+  ezjsonm
+  yojson
+  cohttp
+  cohttp-lwt-unix
+  lwt
+  lwt_ssl
+  uri
+  (alcotest :with-test)))
+
